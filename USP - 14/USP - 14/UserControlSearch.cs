@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace USP___14
 {
     public partial class UserControlSearch : UserControl
@@ -50,19 +50,21 @@ namespace USP___14
             if (comboBox2.SelectedItem == "Приход")
             {
                 comboBox1.Items.Clear();
-                comboBox1.Items.Add("Прих Кат1");
-                comboBox1.Items.Add("Прих Кат2");
-                comboBox1.Items.Add("Прих Кат3");
-                comboBox1.Items.Add("Прих Кат4");
+                comboBox1.Items.Add("Заплата");
+                comboBox1.Items.Add("Наем от имот");
+                comboBox1.Items.Add("Собствен бизнес");
+                comboBox1.Items.Add("Хазарт");
+                comboBox1.Items.Add("Други");
                 comboBox1.SelectedIndex = 0;
             }
             else if (comboBox2.SelectedItem == "Разход")
             {
                 comboBox1.Items.Clear();
-                comboBox1.Items.Add("Раз Кат1");
-                comboBox1.Items.Add("Раз Кат2");
-                comboBox1.Items.Add("Раз Кат3");
-                comboBox1.Items.Add("Раз Кат4");
+                comboBox1.Items.Add("Сметки");
+                comboBox1.Items.Add("Домакинство");
+                comboBox1.Items.Add("Заеми");
+                comboBox1.Items.Add("Лични разходи");
+                comboBox1.Items.Add("Други");
                 comboBox1.SelectedIndex = 0;
             }
         }
@@ -76,6 +78,25 @@ namespace USP___14
         {
         
             
+        }
+        
+        private void flatButtonCreateRevenue_Click(object sender, EventArgs e)
+        {
+            string conString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=USP-14;Integrated Security=True";
+
+            string Kategoria = comboBox1.Text;
+            string Tip = comboBox2.Text;
+            int Mesec = comboBox3.SelectedIndex+1;
+
+            string queryString = "SELECT * from USP14_Table where Mesec_DB='"+ Mesec+"'and Tip_DB='" + Tip + "'and Kategoria_DB='"+Kategoria+"';";
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                con.Open();
+                SqlDataAdapter sqlDa = new SqlDataAdapter(queryString, con);
+                DataTable dtbl = new DataTable();
+                sqlDa.Fill(dtbl);
+                dataGridView1.DataSource = dtbl;
+            }
         }
     }
 }

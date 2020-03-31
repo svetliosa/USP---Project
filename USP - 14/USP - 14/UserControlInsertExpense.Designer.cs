@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.flatButtonCreateRevenue = new USP___14.FlatButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -38,6 +37,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.flatButtonCreateRevenue = new USP___14.FlatButton();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,24 +52,12 @@
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(252, 54);
+            this.panel3.Location = new System.Drawing.Point(189, 44);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(788, 570);
+            this.panel3.Size = new System.Drawing.Size(591, 463);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // flatButtonCreateRevenue
-            // 
-            this.flatButtonCreateRevenue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.flatButtonCreateRevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flatButtonCreateRevenue.ForeColor = System.Drawing.Color.White;
-            this.flatButtonCreateRevenue.Location = new System.Drawing.Point(272, 438);
-            this.flatButtonCreateRevenue.Name = "flatButtonCreateRevenue";
-            this.flatButtonCreateRevenue.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.flatButtonCreateRevenue.Size = new System.Drawing.Size(256, 65);
-            this.flatButtonCreateRevenue.TabIndex = 19;
-            this.flatButtonCreateRevenue.Text = "Добавяне";
-            this.flatButtonCreateRevenue.UseVisualStyleBackColor = false;
             // 
             // comboBox1
             // 
@@ -77,9 +65,10 @@
             this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.Color.White;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(486, 321);
+            this.comboBox1.Location = new System.Drawing.Point(364, 261);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 31);
+            this.comboBox1.Size = new System.Drawing.Size(151, 29);
             this.comboBox1.TabIndex = 18;
             this.comboBox1.Text = "Категория";
             // 
@@ -89,9 +78,10 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(486, 224);
+            this.textBox4.Location = new System.Drawing.Point(364, 182);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 25);
+            this.textBox4.Size = new System.Drawing.Size(150, 20);
             this.textBox4.TabIndex = 17;
             this.textBox4.Text = "Дата (dd.mm.yyyy)";
             this.textBox4.Enter += new System.EventHandler(this.textBox4_Enter);
@@ -101,10 +91,10 @@
             // 
             this.panel5.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(486, 256);
+            this.panel5.Location = new System.Drawing.Point(364, 208);
             this.panel5.Margin = new System.Windows.Forms.Padding(1);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 2);
+            this.panel5.Size = new System.Drawing.Size(150, 2);
             this.panel5.TabIndex = 16;
             // 
             // textBox2
@@ -113,9 +103,10 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(102, 321);
+            this.textBox2.Location = new System.Drawing.Point(76, 261);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 25);
+            this.textBox2.Size = new System.Drawing.Size(150, 20);
             this.textBox2.TabIndex = 15;
             this.textBox2.Text = "Описание";
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
@@ -124,10 +115,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(102, 353);
+            this.panel2.Location = new System.Drawing.Point(76, 287);
             this.panel2.Margin = new System.Windows.Forms.Padding(1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 2);
+            this.panel2.Size = new System.Drawing.Size(150, 2);
             this.panel2.TabIndex = 14;
             // 
             // textBox1
@@ -136,9 +127,10 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(102, 224);
+            this.textBox1.Location = new System.Drawing.Point(76, 182);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 25);
+            this.textBox1.Size = new System.Drawing.Size(150, 20);
             this.textBox1.TabIndex = 13;
             this.textBox1.Text = "Сума в лева";
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
@@ -147,10 +139,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(102, 256);
+            this.panel1.Location = new System.Drawing.Point(76, 208);
             this.panel1.Margin = new System.Windows.Forms.Padding(1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 2);
+            this.panel1.Size = new System.Drawing.Size(150, 2);
             this.panel1.TabIndex = 12;
             // 
             // label1
@@ -158,20 +150,38 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(227, 67);
+            this.label1.Location = new System.Drawing.Point(170, 54);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 39);
+            this.label1.Size = new System.Drawing.Size(271, 31);
             this.label1.TabIndex = 11;
             this.label1.Text = "Добавяне на разход";
             // 
+            // flatButtonCreateRevenue
+            // 
+            this.flatButtonCreateRevenue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.flatButtonCreateRevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flatButtonCreateRevenue.ForeColor = System.Drawing.Color.White;
+            this.flatButtonCreateRevenue.Location = new System.Drawing.Point(204, 356);
+            this.flatButtonCreateRevenue.Margin = new System.Windows.Forms.Padding(2);
+            this.flatButtonCreateRevenue.Name = "flatButtonCreateRevenue";
+            this.flatButtonCreateRevenue.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.flatButtonCreateRevenue.Size = new System.Drawing.Size(192, 53);
+            this.flatButtonCreateRevenue.TabIndex = 19;
+            this.flatButtonCreateRevenue.Text = "Добавяне";
+            this.flatButtonCreateRevenue.UseVisualStyleBackColor = false;
+            this.flatButtonCreateRevenue.Click += new System.EventHandler(this.flatButtonCreateRevenue_Click);
+            // 
             // UserControlInsertExpense
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.Controls.Add(this.panel3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControlInsertExpense";
-            this.Size = new System.Drawing.Size(1040, 624);
+            this.Size = new System.Drawing.Size(780, 507);
+            this.Load += new System.EventHandler(this.UserControlInsertExpense_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);

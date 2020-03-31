@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Windows.Forms;
+using System.Data.SqlClient;
 namespace USP___14
 {
     public partial class UserControlInsertRevenue : UserControl
@@ -16,11 +17,11 @@ namespace USP___14
         {
             InitializeComponent();
             
-            comboBox1.Items.Add("категория1");
-            comboBox1.Items.Add("категория2");
-            comboBox1.Items.Add("категория3");
-            comboBox1.Items.Add("категория4");
-            comboBox1.Items.Add("категория5");
+            comboBox1.Items.Add("Заплата");
+            comboBox1.Items.Add("Наем от имот");
+            comboBox1.Items.Add("Собствен бизнес");
+            comboBox1.Items.Add("Хазарт");
+            comboBox1.Items.Add("Други");
             comboBox1.SelectedIndex = 0;
         }
 
@@ -88,6 +89,46 @@ namespace USP___14
                 textBox4.Text = "Дата (dd.mm.yyyy)";
                 panel5.BackColor = Color.White;
             }
+        }
+
+        private void UserControlInsertRevenue_Load(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void flatButtonCreateRevenue_Click(object sender, EventArgs e)
+        {
+            string conString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=USP-14;Integrated Security=True";
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
+
+            float Suma = float.Parse(textBox1.Text);
+            string Data = textBox4.Text.ToString();
+            string Opisanie = textBox2.Text.ToString();
+            string Tip = "Приход";
+            string Kategoria = comboBox1.Text;
+            string Mesec = Data.Substring(3, 2);
+            if (textBox1.Text == "") { MessageBox.Show("Error!"); }
+            if (textBox2.Text == "") { MessageBox.Show("Error!"); }
+            if (textBox4.Text == "") { MessageBox.Show("Error!"); }
+
+            else
+            {
+                if (con.State == System.Data.ConnectionState.Open)
+                {
+
+                    string q = "insert into USP14_Table(Tip_DB,Suma_DB,Kategoria_DB,Data_DB,Opisanie_DB,Mesec_DB)values('" + Tip + "','" + Suma + "','" + Kategoria + "','" + Data
+                + "','" + Opisanie + "','" +Mesec + "')";
+                    SqlCommand cmd = new SqlCommand(q, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Connection Made!");
+                }
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
