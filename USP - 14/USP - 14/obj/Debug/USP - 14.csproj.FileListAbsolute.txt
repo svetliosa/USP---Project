@@ -11,3 +11,16 @@ C:\Users\svetl\source\repos\USP - 14\USP - 14\obj\Debug\USP___14.UserControlSear
 C:\Users\svetl\source\repos\USP - 14\USP - 14\obj\Debug\USP___14.UserControlInsertExpense.resources
 C:\Users\svetl\source\repos\USP - 14\USP - 14\obj\Debug\USP___14.UserControlInsertRevenue.resources
 C:\Users\svetl\source\repos\USP - 14\USP - 14\obj\Debug\USP___14.UserControlStatistics.resources
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\bin\Debug\USP - 14.exe.config
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\bin\Debug\USP - 14.exe
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\bin\Debug\USP - 14.pdb
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\obj\Debug\USP - 14.csprojAssemblyReference.cache
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\obj\Debug\USP___14.Form1.resources
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\obj\Debug\USP___14.Properties.Resources.resources
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\obj\Debug\USP___14.UserControlSearch.resources
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\obj\Debug\USP___14.UserControlInsertExpense.resources
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\obj\Debug\USP___14.UserControlInsertRevenue.resources
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\obj\Debug\USP___14.UserControlStatistics.resources
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\obj\Debug\USP - 14.csproj.GenerateResource.cache
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\obj\Debug\USP - 14.exe
+E:\Programming\Uni\C#\USP---Project\USP - 14\USP - 14\obj\Debug\USP - 14.pdb
