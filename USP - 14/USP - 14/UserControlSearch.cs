@@ -96,6 +96,9 @@ namespace USP___14
                 DataTable dtbl = new DataTable();
                 sqlDa.Fill(dtbl);
                 dataGridView1.DataSource = dtbl;
+                if (dataGridView1.Rows.Count == 1) {
+                    MessageBox.Show("Не съществуват такива приходи/разходи!");
+                }
             }
         }
     }
